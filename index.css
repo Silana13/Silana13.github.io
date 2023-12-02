@@ -1,11 +1,21 @@
 body {
     background-color: #201649;
     color: #F1E1FC;
-    font-family: Acme;
+    font-family: Acme, Arial;
     margin: 0;
 }
-p {
-    font-size:100px;
+
+
+/*  div  */
+div.verrytopbar {
+    width: auto;
+    height: 50px;
+    border: 3px solid #23003d;
+    background-color: #6100AD;
+    border-left: 0;
+    border-right: 0;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 div.toppage {
     width:auto;
@@ -19,8 +29,49 @@ div.toppage {
     background-position: center;
     background-position-y: 720px;
 }
-iframe.discord {
-    position: fixed;
-    top: 220px;
-    right: 15px;
+
+
+/*  p  */
+p {
+    font-size:100px;
 }
+p.verrytopbartext {
+    color: #F1E1FC;
+    font-family: Acme, Arial;
+    font-size: 23px;
+    margin-top: 0;
+    padding-top: 0px;
+    position: relative;
+    top: 5px;
+    width: 102px;
+}
+
+
+/*  a  */
+a {
+    color: #8b6bff;
+    font-family: Acme, Arial;
+    font-size: 23px;
+    margin-top: 0;
+    padding-top: 10px;
+}
+a.twitch {
+    text-decoration: none;
+    border: 1px solid #23003d; border-radius: 10px;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute; top: 14px; right: 200px
+
+}
+a.youtube {
+    text-decoration: none;
+    border: 1px solid #23003d; border-radius: 10px;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: fixed; top: 14px; right: 95px;
+}
+
+/*  IFrames  */
+iframe.discord {position: fixed; top: 280px; right: 15px;}
