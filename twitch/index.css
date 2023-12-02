@@ -19,8 +19,3 @@ div.toppage {
     background-position: center;
     background-position-y: 720px;
 }
-iframe.discord {
-    position: fixed;
-    top: 220px;
-    right: 15px;
-}
