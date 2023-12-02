@@ -75,9 +75,16 @@ a.youtube {
 
 /*  Image  */
 img.fish {
-    position: absolute; bottom: 0px; right: 0px;
+    position: fixed; bottom: 0px; right: 0px; 
     width: 100px;
 }
 
 /*  IFrames  */
 iframe.discord {position: absolute; top: 280px; right: 15px; margin: 10px;}
+iframe.twitchchat {
+    position: absolute; top: 800px; right: 23px;
+    border: 1px solid black;
+}
+
+/*  Scroller  */
+div.scroller {height: 1200px; margin: 0px;}
