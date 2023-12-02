@@ -61,7 +61,7 @@ a.twitch {
     padding: 3px;
     padding-left: 10px;
     padding-right: 10px;
-    position: absolute; top: 14px; right: 200px
+    position: absolute; top: 14px; right: 200px;
 
 }
 a.youtube {
@@ -70,8 +70,15 @@ a.youtube {
     padding: 3px;
     padding-left: 10px;
     padding-right: 10px;
-    position: fixed; top: 14px; right: 95px;
+    position: absolute; top: 14px; right: 95px;
+}
+
+/*  Image  */
+image.fish {
+    position: fixed; 
+    top: 100px;
+    right: 100px;
 }
 
 /*  IFrames  */
-iframe.discord {position: fixed; top: 280px; right: 15px;}
+iframe.discord {position: absolute; top: 280px; right: 15px; margin: 10px;}
