@@ -74,10 +74,9 @@ a.youtube {
 }
 
 /*  Image  */
-image.fish {
-    position: fixed; 
-    top: 100px;
-    right: 100px;
+img.fish {
+    position: absolute; bottom: 0px; right: 0px;
+    width: 100px;
 }
 
 /*  IFrames  */
