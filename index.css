@@ -1,94 +1,28 @@
-/* General CSS */
+/*Information -- Color Scemes*/
+/*  text: #b8b8b8; background: #3a1332; primary: #28003d; secondary: #d392c3; accent: #ff9e9e;  */
+/*Import Google Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Acme:700|Acme:400');
+
+/*Mobile web build*/
+html, body {max-width: 100%;overflow-x: hidden;}
+div.scroller {height: 2000px; margin: 0px;}
 body {
-    background-color: #201649;
-    color: #F1E1FC;
+    background-color: #3a1332;
+    color: #b8b8b8;
     font-family: Acme, Arial;
     margin: 0;
 }
-/*  div  */
-div.verrytopbar {
-    width: 100%;
-    height: 50px;
-    border: 3px solid #23003d;
-    background-color: #6100AD;
-    border-left: 0;
-    border-right: 0;
-    padding-left: 10px;
-    padding-top: 10px;
-}
-div.toppage {
-    width:100%;
-    height: 200px;
-    border: 10px solid black;
-    border-left: 0;
-    border-right: 0;
-    border-top: 0;
-    background-image: url(media/Sil_YT-Banner.png);
-    background-size: 100%;
-    background-position: center;
-    background-position-y: 720px;
-}
-div.maincontent {display: flex;justify-content: flex-start;flex: auto;flex-wrap: wrap;}
-div.maincontent div.aboutme {
-    margin: 10px;
-}
-/*  p  */
-p {font-size:100px;}
-p.verrytopbartext {
-    color: #F1E1FC;
-    font-family: Acme, Arial;
-    font-size: 23px;
-    margin-top: 0;
-    padding-top: 0px;
-    position: relative;
-    top: 5px;
-    width: 102px;
-}
-/*  a  */
-a {
-    color: #d4a0ff;
-    font-family: Acme, Arial;
-    font-size: 23px;
-    margin-top: 0;
-    padding-top: 10px;
-}
-a:hover {color: #a332ff;}
-a.twitch {
-    text-decoration: none;
-    border: 1px solid #23003d; border-radius: 10px;
-    padding: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: absolute; top: 14px; right: 200px;
+/*Top bar*/
+div.verrytopbar {display:flex;flex:auto;flex-wrap: wrap;flex-direction:row;}
+div.socials {display:flex;flex:auto;flex-direction:row;width:100%;justify-content: center;}
+p.verrytopbartext {width: 100%;text-align:center;font-size:50px;}
+a.socialslink {margin-left:3px;margin-right:3px;}
+img.socialimagesize{height: 50px;}
 
-}
-a.youtube {
-    text-decoration: none;
-    border: 1px solid #23003d; border-radius: 10px;
-    padding: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: absolute; top: 14px; right: 95px;
-}
 
-/*  Video  */
 img.fish {position: fixed; bottom: 0px; right: 5px; width: 100px;}
-
-/*  IFrames  */
 iframe.discord {position: absolute; display: inline-block; top: 830px; left: 10px; margin: 10px; height: 550px; width:92vw;}
-iframe.twitch {display: inline-block;width: 99%;height: 550px;position: absolute; top: 280px; left: 3px;
-}
-
-/*  Scroller  */
-div.scroller {height: 2000px; margin: 0px;}
-
-/* Disable Scrollbar */
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-/* Specific Stuff */
+iframe.twitch {display: inline-block;width: 99%;height: 550px;position: absolute; top: 280px; left: 3px;}
 
 /* PC/Laptop Site */
 @media screen and (min-width:600px) {
