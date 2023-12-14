@@ -1,11 +1,10 @@
+/* General CSS */
 body {
     background-color: #201649;
     color: #F1E1FC;
     font-family: Acme, Arial;
     margin: 0;
 }
-
-
 /*  div  */
 div.verrytopbar {
     width: 100%;
@@ -29,11 +28,12 @@ div.toppage {
     background-position: center;
     background-position-y: 720px;
 }
-
-/*  p  */
-p {
-    font-size:100px;
+div.maincontent {display: flex;justify-content: flex-start;flex: auto;flex-wrap: wrap;}
+div.maincontent div.aboutme {
+    margin: 10px;
 }
+/*  p  */
+p {font-size:100px;}
 p.verrytopbartext {
     color: #F1E1FC;
     font-family: Acme, Arial;
@@ -44,8 +44,6 @@ p.verrytopbartext {
     top: 5px;
     width: 102px;
 }
-
-
 /*  a  */
 a {
     color: #d4a0ff;
@@ -54,9 +52,7 @@ a {
     margin-top: 0;
     padding-top: 10px;
 }
-a:hover {
-    color: #a332ff;
-}
+a:hover {color: #a332ff;}
 a.twitch {
     text-decoration: none;
     border: 1px solid #23003d; border-radius: 10px;
@@ -76,19 +72,25 @@ a.youtube {
 }
 
 /*  Video  */
-img.fish {
-    position: fixed; bottom: 0px; right: 0px; 
-    width: 100px;
-}
+img.fish {position: fixed; bottom: 0px; right: 5px; width: 100px;}
 
 /*  IFrames  */
-iframe.discord {position: absolute; display: inline-block; top: 830px; right: 15px; margin: 10px; height: 550px; width:350px;}
-iframe.twitch {
-    display: inline-block;
-    width: 99%;
-    height: 550px;
-    position: absolute; top: 280px; left: 3px;
+iframe.discord {position: absolute; display: inline-block; top: 830px; left: 10px; margin: 10px; height: 550px; width:92vw;}
+iframe.twitch {display: inline-block;width: 99%;height: 550px;position: absolute; top: 280px; left: 3px;
 }
 
 /*  Scroller  */
-div.scroller {height: 1200px; margin: 0px;}
+div.scroller {height: 2000px; margin: 0px;}
+
+/* Disable Scrollbar */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Specific Stuff */
+
+/* PC/Laptop Site */
+@media screen and (min-width:600px) {
+    iframe.discord {position: absolute; display: inline-block; top: 830px; right: 15px; margin: 10px; height: 550px; width:350px;}
+}
