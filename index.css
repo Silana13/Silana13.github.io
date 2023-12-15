@@ -5,7 +5,7 @@
 
 /*Mobile web build*/
 html, body {max-width: 100%;overflow-x: hidden;}
-div.scroller {height: 2000px; margin: 0px;}
+div.scroller {height: 2300px; margin: 0px;}
 body { display: flex;flex-flow: wrap;justify-content: flex-end;
     background-color: #3a1332;
     color: #b8b8b8;
@@ -21,19 +21,28 @@ a.socialslink {height: 50px;margin-left:3px;margin-right:3px;}
 img.socialimagesize{height: 50px;}
 
 /* Main Content */
-div.maincontent {display:flex;flex-flow: wrap;justify-content:flex-start;position: absolute;top:1330px;left:0px;width: 100%;}
+div.maincontent {display:flex;flex-flow: wrap;justify-content:flex-start;position: absolute;top:1970px;left:0px;width: 100%;}
 div.aboutme {margin-left: 10px;background-color: #28003d;width: 96%;}
 
 img.fish {position: fixed; bottom: 0px; right: 5px; width: 100px;}
-iframe.discord {position: absolute; display: inline-block; top: 750px; margin-top: 15px; height: 550px; width:100%;}
+iframe.discord {position: absolute; display: inline-block; top: 1400px; margin-top: 15px; height: 550px; width:100%;}
 iframe.twitch {display: inline-block;width: 99%;height: 550px;position: absolute; top: 200px;}
+iframe.twitchchat {display: inline-block;width: 99%;height: 650px;position: absolute; top: 756px;}
 
-/* PC/Laptop Site */
-@media screen and (min-width:700px) {
-    /* Main Content */
-    div.maincontent {display:flex;flex-flow: wrap;justify-content:flex-start;position: absolute;top:760px;left:0px;width: 100%;}
+/* PC/Laptop Sites */
+/* Laptop/Tablet Site */
+@media screen and (min-width:1020px) {
+    div.maincontent {display:flex;flex-flow: wrap;justify-content:flex-start;position: absolute;top:760px;left:0px;width:calc(100% - 370px);}
     div.aboutme {margin-left: 10px;}
-    
     iframe.twitch {display: inline-block;width: calc(100% - 380px);height: 550px;position:absolute;top:200px;left:0px;}
-    iframe.discord {position: absolute; display: inline-block; top: 185px; right: 15px; height: 550px; width:350px;}
+    iframe.twitchchat {display: inline-block;width: 360px;height: 550px;position: absolute; top: 200px;}
+    iframe.discord {position: absolute; display: inline-block; top: 750px; right: 15px; height: 550px; width:350px;}
+}
+/* PC/Laptop Site*/
+@media screen and (min-width:1440px) {
+    div.maincontent {display:flex;flex-flow: wrap;justify-content:flex-start;position: absolute;top:760px;left:0px;width:calc(100% - 340px);}
+}
+/* PC/Laptop Site*/
+@media screen and (min-width:2500px) {
+    div.maincontent {display:flex;flex-flow: wrap;justify-content:flex-start;position: absolute;top:760px;left:0px;width:calc(100% - 300px);}
 }
